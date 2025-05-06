@@ -1,0 +1,15 @@
+name: "Welcome New Contributors"
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user
+        run: |
+          echo "Welcome to the repository! Thank you for your contribution."
